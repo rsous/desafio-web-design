@@ -1,0 +1,29 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials h1 {
+  margin: 30px;
+}
+
+.testimonials article {
+  margin: 10px;
+  display: flex;
+  border: 1px solid #000;
+  height: 150px;
+  width: 40%;
+}
+
+.testimonials article img {
+  height: 100%;
+  width: 25%;
+  object-fit: cover;
+}
+
+.testimonials blockquote {
+  margin: 30px;
+  font-size: 16px;
+}
+
