@@ -1,0 +1,23 @@
+.services {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid #000;
+  background-color: #aaa;
+  height: 250px;
+}
+
+.services div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.services svg {
+  font-size: 60px !important;
+}
+.services img {
+  width: 100px;
+  
+}

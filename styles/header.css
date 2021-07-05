@@ -1,0 +1,39 @@
+
+.call-to-action {
+  border: 0;
+  background: #000;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  top: 450px;
+  right: 450px;
+  font-size: 1.3em;
+}
+
+header {
+  display: flex;
+  margin: 50px auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 15px;
+  font-family: "Coming Soon", cursive;
+}
+
+header p {
+  width: 400px;
+}
+
+.header-image {
+  margin: 20px !important;
+  width: 400px;
+
+  transform: rotate(-10deg);
+}

@@ -1,0 +1,30 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #666;
+  padding: 70px;
+  z-index: 2000;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal.visible {
+  display: block;
+}
+
+.body-blackout {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: none;
+}
+
+.body-blackout.visible {
+  display: block;
+}
