@@ -1,1 +1,6 @@
 node_modules/
+public/packs/
+.firebaserc
+firebase.json
+firebase-debug.log
+.firebase/

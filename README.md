@@ -27,18 +27,13 @@ entre em contato por email com lgurgel@id.uff.br
 
 ## Critérios de Avaliação
 - Organização de código (incluindo css, js e html)
-- Fundamentos de UI/UX Design, sendo estes:
-  - Cor e Contraste
-  - Consistência
-  - Alinhamento
-  - Espaçamento
-  - Hierarquia Visual
-  - Tipografia (Uso de fontes)
+- Fundamentos de UI/UX Design
 
 ## Dicas
 - É permitido que sejam alteradas imagens, ícones, fontes e cores livremente
 - É desejável que seja feita uma reorganização do CSS e do JS
-- Não é necessário mexer na configuração do webpack
+- Não é necessário mexer na configuração do webpack, mas não é proibido
+- Caso tenha tempo sobrando, sinta-se livre para adicionar recursos, como carrosséis, dropdowns, etc :)
 
 ## Links Úteis
 - [Google Fonts](https://fonts.google.com/) (marcando '+ Select this style' é possível copiar o @import da fonte)
