@@ -31,6 +31,7 @@ entre em contato por email com lgurgel@id.uff.br
 
 ## Dicas
 - É permitido que sejam alteradas imagens, ícones, fontes e cores livremente
+- Também é permitido que sejam adicionadas dependências
 - É desejável que seja feita uma reorganização do CSS e do JS
 - Não é necessário mexer na configuração do webpack, mas não é proibido
 - Caso tenha tempo sobrando, sinta-se livre para adicionar recursos, como carrosséis, dropdowns, etc :)
