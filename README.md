@@ -5,7 +5,7 @@ Neste desafio, é solicitado que se faça redesign e refatoração deste projeto
 - Faça um fork deste [repositório](https://github.com/LeoGurja/desafio-web-design)
 - Clone o seu fork
 - Faça alterações no CSS, JS e HTML para que se torne um site que respeite os fundamentos de UI/UX Design
-- Nos mande o link do seu projeto
+- Mande o link do seu projeto para lgurgel@id.uff.br
 
 ## Setup
 ### Caso ainda não possua, instale o Node.js
