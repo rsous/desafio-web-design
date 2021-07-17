@@ -109,11 +109,13 @@
 /* Track */
 .message textarea::-webkit-scrollbar-track {
   background: #e7e4df;
+  border-radius: 5px;
 }
 
 /* Handle */
 .message textarea::-webkit-scrollbar-thumb {
   background: #b48762;
+  border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -141,12 +143,11 @@
   color: #a47148;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
   outline: none;
-  padding: 1rem 1.6rem;
-  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -211,5 +212,9 @@
 
   .contact__success-msg h3 {
     font-size: 1.1rem;
+  }
+
+  #form_button {
+    font-size: 0.8rem;
   }
 }
