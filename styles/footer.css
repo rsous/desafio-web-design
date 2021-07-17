@@ -1,0 +1,45 @@
+footer {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0.5rem 3rem 1rem 3rem;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  margin: 0.5rem 0;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  color: rgba(192, 192, 192, 1);
+  margin-left: 1rem;
+}
+
+.social-links svg {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links__logo:hover {
+  color: #a47148f0;
+}
+
+.copyright {
+  color: rgb(168, 168, 168);
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .copyright p {
+    margin-top: 0.5rem;
+  }
+}

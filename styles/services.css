@@ -1,23 +1,120 @@
 .services {
-  display: flex;
-  flex-direction: row;
-  border: 5px solid #000;
-  background-color: #aaa;
-  height: 250px;
+  background-image: linear-gradient(to right bottom, #ffffff, #eae6e2);
+  color: rgba(119, 119, 119, 1);
+  padding: 8rem 0;
 }
 
-.services div {
+.services-group {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.services-group__item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.services p {
+  line-height: 1.4;
+  text-align: justify;
+  color: #777;
+  transition: all 0.3s ease;
+}
+
+.services-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
   flex-direction: column;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.services svg {
-  font-size: 60px !important;
+.services-item:hover {
+  -webkit-transform: translateY(-1rem) scale(1.03);
+  transform: translateY(-1rem) scale(1.03);
 }
-.services img {
-  width: 100px;
-  
+
+.services-item__icon {
+  color: #f6bd60;
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.services-item:hover .services-item__icon {
+  color: #7b6c52;
+  font-size: 4rem;
+}
+
+.services__button {
+  border: 2px solid #f6bd60;
+  background: #fff;
+  border-radius: 2rem;
+  color: #f6bd60;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 20px;
+}
+
+.services__button:hover {
+  background: #f6bd60;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .services-item {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-group__item {
+    width: 50%;
+  }
+
+  .services-group__item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .services p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services {
+    padding: 7rem 0;
+  }
+
+  .services-group__item {
+    width: 70%;
+  }
+
+  .services-item__icon {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .services-group__item {
+    width: 90%;
+  }
 }

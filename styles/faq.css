@@ -1,0 +1,102 @@
+#faq {
+  background-color: #333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(../public/images/road-5.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0;
+}
+
+.container-faq {
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.container-faq .section-title {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.faq {
+  box-shadow: 0 2px 8px rgba(23, 23, 23, 0.3);
+  color: #717171;
+  margin: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.faq:hover {
+  box-shadow: 0 4px 14px rgba(23, 23, 23, 0.3);
+}
+
+.faq_question {
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.faq .to-bottom::before,
+.faq .to-top::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.faq .to-bottom::before {
+  border-top: 10px solid #707070;
+}
+
+.faq .to-top::before {
+  border-bottom: 10px solid #a47148f0;
+}
+
+.faq .to-bottom::after,
+.faq .to-top::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(1rem + 1px);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  transform: translateY(calc(-50% - 2px));
+}
+
+.faq .to-bottom::after {
+  border-top: 9px solid #fff;
+}
+
+.faq .to-top::after {
+  border-bottom: 9px solid #fff;
+  transform: translateY(calc(-50% + 2px));
+}
+
+.faq_answer {
+  display: none;
+  padding: 1rem;
+  border-top: 1px solid #bcbcbc;
+  margin-left: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .faq {
+    margin: 1.5rem 4.5rem;
+  }
+
+  .faq_question {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .faq {
+    margin: 1.5rem;
+  }
+}

@@ -1,39 +1,83 @@
-
 .call-to-action {
   border: 0;
-  background: #000;
+  background: #a47148;
+  border-radius: 2rem;
   color: #fff;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  position: absolute;
-  top: 450px;
-  right: 450px;
   font-size: 1.3em;
+  letter-spacing: 1px;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.call-to-action:hover,
+.call-to-action:active {
+  background: #b48259;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
 }
 
 header {
-  display: flex;
-  margin: 50px auto;
-  flex-direction: column;
-  align-items: center;
+  color: #fff;
+  height: 100vh;
+  background-color: #333;
+}
+
+header .flex {
+  justify-content: flex-start;
+}
+
+.header__container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1;
 }
 
 .header-title {
-  font-weight: bold;
-  font-size: 2em;
-  margin: 15px;
-  font-family: "Coming Soon", cursive;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 }
 
 header p {
-  width: 400px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  width: 35rem;
+  text-align: justify;
 }
 
-.header-image {
-  margin: 20px !important;
-  width: 400px;
+@media only screen and (max-width: 768px) {
+  .header-title {
+    font-size: 2.4rem;
+  }
 
-  transform: rotate(-10deg);
+  .header__content {
+    text-align: center;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+    width: 65%;
+  }
+
+  .call-to-action {
+    font-size: 1.2rem;
+    padding: 1rem 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-title {
+    font-size: 2rem;
+  }
+
+  header p {
+    width: 85%;
+  }
 }

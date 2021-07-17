@@ -1,122 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>My Company</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/favicon.png" />
-  <title>My Company</title>
-</head>
-
-<body>
-  <nav>
-    <h1 class="nav-logo">My Company</h1>
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Serviços</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
-      </li>
-    </ul>
-  </nav>
-
-  <main>
-    <header>
-      <h1 class="header-title">The road less traveled</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur fringilla turpis est, eget posuere libero pharetra a.
-        Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-        Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-        Nam congue luctus nisl, id finibus nisi cursus vitae
-      </p>
-      <img class="header-image" src="images/car.png" alt="car" />
-      <button type="button" class="call-to-action">Start my journey</button>
-    </header>
-    <section class="services">
-      <div>
-        <i class="far fa-calendar-alt"></i>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
-      </div>
-      <div>
-        <img src="images/lock.png" alt="lock" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
-      </div>
-      <div>
-        <img src="images/like.png" alt="thumbs up" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Curabitur fringilla turpis est, eget posuere libero pharetra a.
-          Curabitur vulputate dapibus magna. Integer vehicula tellus vel purus ultrices sagittis.
-          Nunc sit amet eros vitae ex mattis dignissim a nec libero.
-          Nam congue luctus nisl, id finibus nisi cursus vitae
-        </p>
-      </div>
-    </section>
-    <section class="testimonials">
-      <h1>Testimonials</h1>
-      <article>
-        <img src="images/guy1.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
+  <body>
+    <main>
+      <header id="home">
+        <!-- NAVBAR -->
+        <div class="navbar">
+          <div class="container flex">
+            <h1 class="nav-logo">My Company</h1>
+            <nav>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </article>
-      <article>
-        <img src="images/girl.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-      <article>
-        <img src="images/guy2.jpg" alt="guy" />
-        <div>
-          <blockquote>
-            ...I was struggling to find the right solution, and once MyCompany came along,
-            I knew all my troubles would go away.
-          </blockquote>
-        </div>
-      </article>
-    </section>
-  </main>
-  <div class="modal">
-    <form>
-      <h1 class="modal-title">Sign up</h1>
-      <label for="email">Email</label>
-      <input id="email" type="text" name="user[email]" />
-      <label for="email">Password</label>
-      <input id="password" type="password" name="user[password]" />
-      <label for="email">Password Confirmation</label>
-      <input id="password-confirmation" type="password" name="user[password_confirmation]" />
-    </form>
-  </div>
-  <div class="body-blackout"></div>
-  <script src="/packs/bundle.js"></script>
-</body>
 
+        <div class="header__container">
+          <div class="container flex">
+            <div class="header__content">
+              <h2 class="header-title">The road less traveled</h2>
+              <p>
+                Stoke your wanderlust… It’s time for an adventure! From safaris
+                in the wild, deep dives into majestic seas to railway rides up
+                steep mountains, MyCompany is with you every breath-taking,
+                adrenaline-pumping way. There’s an amazing planet out there —
+                let’s go discover it.
+              </p>
+              <button type="button" class="call-to-action">
+                Start my journey
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div
+              class="mySlides__img"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(images/road.jpg);
+              "
+            ></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div
+              class="mySlides__img"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(images/road-2.jpg);
+              "
+            ></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div
+              class="mySlides__img"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(images/road-3.jpg);
+              "
+            ></div>
+          </div>
+        </div>
+        <br />
+
+        <div class="dots-container">
+          <span class="dot" data-position="1"></span>
+          <span class="dot" data-position="2"></span>
+          <span class="dot" data-position="3"></span>
+        </div>
+      </header>
+
+      <!-- SERVICES -->
+      <section class="services" id="services">
+        <h2 class="section-title">Services</h2>
+
+        <div class="container services-group">
+          <div class="services-group__item">
+            <div class="services-item">
+              <i class="services-item__icon fas fa-gas-pump"></i>
+              <p>
+                We know the unexpected happens and plans change. My Company
+                works with our partners to make things easier for you. Part of
+                this means you can choose a package that includes fuel for your
+                entire trip.
+              </p>
+
+              <button class="services__button">Read more</button>
+            </div>
+          </div>
+          <div class="services-group__item">
+            <div class="services-item">
+              <i class="services-item__icon fas fa-campground"></i>
+              <p>
+                Hundreds of peaceful campgrounds tucked in the mountains under a
+                canopy of cool shade. You can choose from solo traveling to big
+                groups. Our partners provide the best equipments so you can just
+                enjoy your journey.
+              </p>
+
+              <button class="services__button">Read more</button>
+            </div>
+          </div>
+          <div class="services-group__item">
+            <div class="services-item">
+              <i class="services-item__icon fas fa-map-signs"></i>
+              <p>
+                Travel has become more complicated, but we are here to guide you
+                through it. Our expert consultants use their wealth of knowledge
+                to help you make the best decisions for your trip. Guidance on
+                any travel conditions.
+              </p>
+
+              <button class="services__button">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container-faq">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faqs">
+            <div class="faq">
+              <h3 class="faq_question to-bottom">
+                Who should I contact in case of an emergency?
+              </h3>
+              <div class="faq_answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat sunt vero autem ut sit quos aliquam aspernatur eos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                quam saepe numquam cumque adipisci laboriosam maiores.
+              </div>
+            </div>
+            <div class="faq">
+              <h3 class="faq_question to-bottom">
+                Is insurance included in the packages?
+              </h3>
+              <div class="faq_answer">
+                Doloremque ad quam nobis ullam ipsa ea impedit possimus
+                exercitationem iure sequi esse quaerat quo, perferendis
+                reprehenderit dolores vero fuga vitae quibusdam aspernatur. Qui,
+                quos. Fugit quia repudiandae porro quibusdam sit est commodi ad
+                dolores nulla ex tempora ipsam provident, earum ullam.
+              </div>
+            </div>
+            <div class="faq">
+              <h3 class="faq_question to-bottom">
+                Are there proper vehicles available for people with
+                disabilities?
+              </h3>
+              <div class="faq_answer">
+                Reiciendis dolorum possimus neque quas expedita esse sint odit
+                labore inventore fugit impedit ut, unde excepturi voluptatem
+                numquam. Cum, asperiores. Earum voluptates reprehenderit,
+                sapiente esse labore ratione debitis voluptatibus, aperiam
+                explicabo suscipit sit, ipsum ea laboriosam.
+              </div>
+            </div>
+            <div class="faq">
+              <h3 class="faq_question to-bottom">
+                Does MyCompany provide local guides for travelers?
+              </h3>
+              <div class="faq_answer">
+                Dicta nesciunt quam perspiciatis modi aperiam magnam culpa ex
+                quidem cum adipisci placeat pariatur magni minima repudiandae
+                explicabo ratione qui sunt rerum, laudantium delectus dolore
+                aliquam expedita. Ipsum, ullam nemo.
+              </div>
+            </div>
+            <div class="faq">
+              <h3 class="faq_question to-bottom">
+                How can I request a refund?
+              </h3>
+              <div class="faq_answer">
+                Expedita voluptatem explicabo ut quis laboriosam impedit
+                repellendus facilis natus perspiciatis dicta magnam totam culpa
+                porro, magni voluptatum optio soluta asperiores omnis laudantium
+                sint architecto vel!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact us</h2>
+          <form id="contact_form" class="contact__form">
+            <div class="name">
+              <label for="name"></label>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                id="name_input"
+                required
+              />
+            </div>
+            <div class="email">
+              <label for="email"></label>
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                id="email_input"
+                required
+              />
+            </div>
+            <div class="telephone">
+              <label for="telephone"></label>
+              <input
+                type="tel"
+                placeholder="Phone number"
+                name="telephone"
+                id="telephone_input"
+                required
+              />
+            </div>
+            <div class="subject">
+              <label for="subject" class="label-select">
+                <select
+                  placeholder="Subject"
+                  name="subject"
+                  id="subject_input"
+                  required
+                >
+                  <option disabled hidden selected>Subject</option>
+                  <option>I'd like to ask a question</option>
+                  <option>I'd like to make a proposal</option>
+                  <option>I'd like to file a complaint</option>
+                </select>
+              </label>
+            </div>
+            <div class="message">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                placeholder="Message"
+                id="message_input"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Send Message" id="form_button" />
+            </div>
+          </form>
+          <!-- // End form -->
+          <div class="contact__success-msg">
+            <!-- <i class="far fa-check-circle"></i> -->
+            <h3>Message sent!</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 class="section-title">Testimonials</h2>
+        </div>
+
+        <div class="container testimonials-groups">
+          <div class="testimonial">
+            <blockquote>
+              I just cameback from my honeymoon with my wife and I have to tell
+              everybody how amazing MyCompany is! One of a kind experience!
+              <cite>
+                <img src="images/guy1.jpg" alt="Client 1" />
+                João Oliveira
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              I had the time of my life! They had my entire trip sorted for me
+              and I was able to visit places I never thought I would go.
+              <cite>
+                <img src="images/girl.jpg" alt="Client 2" />
+                Alice Castro
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              Every traveler should learn about MyCompany! Fantastic service,
+              great staff, and beautiful destinies! They've got everything
+              covered!
+              <cite>
+                <img src="images/guy2.jpg" alt="Client 3" />
+                Daniel Barroso
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal">
+      <form class="signup-form">
+        <h3 class="modal-title">Sign up</h3>
+
+        <input id="email" type="email" placeholder="Email" required />
+        <label for="email">Email</label>
+
+        <input id="password" type="password" placeholder="Password" required />
+        <label for="password">Password</label>
+
+        <input
+          id="password-confirmation"
+          type="password"
+          placeholder="Confirm Password"
+          required
+        />
+        <label for="password-confirmation">Confirm Password</label>
+        <button type="submit" class="btn-signup">Sign up</button>
+      </form>
+    </div>
+
+    <!-- MODAL SUCCESS -->
+    <div class="modal-success">
+      <div class="modal-success-msg">
+        <i class="far fa-check-circle"></i>
+        <h3>You have signed up successfully!</h3>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-row">
+        <ul class="social-links">
+          <li>
+            <a href="https://devroute.netlify.app/"
+              ><i
+                name="logo-facebook"
+                class="fab fa-facebook-square logo-facebook social-links__logo"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://devroute.netlify.app/"
+              ><i
+                name="logo-twitter"
+                class="fab fa-twitter logo-twitter social-links__logo"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://devroute.netlify.app/"
+              ><i
+                name="logo-google"
+                class="fab fa-google logo-google social-links__logo"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://devroute.netlify.app/"
+              ><i
+                name="logo-instagram"
+                class="fab fa-instagram logo-instagram social-links__logo"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container copyright">
+        <p>Copyright &copy; 2021 <span>All rights reserved.</span></p>
+      </div>
+    </footer>
+
+    <div class="body-blackout"></div>
+    <script src="/packs/bundle.js"></script>
+  </body>
 </html>

@@ -1,29 +1,78 @@
-
-nav {
-  display: flex;
-  width: 100%;
-  background: #777;
-  padding: 10px 250px;
+.navbar {
+  color: #fff;
+  height: 7rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 
-.nav-logo {
-  display: inline;
-  color: rgb(194, 92, 92);
+.navbar .flex {
+  justify-content: space-between;
 }
 
 .nav-list {
   display: flex;
-  width: 400px;
-  justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: 400px;
-}
-
-.nav-item {
-  display: inline;
-  margin: 0 30px; 
 }
 
 .nav-link {
   color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  border-bottom-color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar.sticky {
+  background-color: #a47148f0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.082);
+  height: 5rem;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding-bottom: 1rem;
+  }
+
+  .navbar.sticky {
+    height: auto;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar.sticky .nav-logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
 }

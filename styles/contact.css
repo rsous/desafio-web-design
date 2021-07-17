@@ -1,0 +1,222 @@
+.contact {
+  background-image: linear-gradient(to right bottom, #ffffff, #eae6e2);
+  height: 100%;
+  padding: 8rem 0;
+}
+
+.contact .section-title {
+  color: rgba(119, 119, 119);
+  margin-bottom: 4rem;
+}
+
+.contact__form {
+  padding: 0 1.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.contact__form input[type='text'],
+.contact__form input[type='email'],
+.contact__form input[type='tel'],
+.contact__form select,
+.contact__form textarea {
+  background: none;
+  border: none;
+  color: #a47148;
+  letter-spacing: 1px;
+  margin: 0 0 1.5em 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 1rem 1.5rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/*.contact__form input[type='text']:focus,*/
+/*.contact__form input[type='email']:focus,*/
+/*textarea:focus {*/
+/*  outline: none;*/
+/*  padding: 0 0 0.875em 0;*/
+/*}*/
+
+.contact__form .name {
+  float: left;
+  width: 45%;
+}
+
+.contact__form .email {
+  float: right;
+  width: 45%;
+}
+
+.contact__form .telephone {
+  width: 100%;
+}
+
+.contact__form .subject {
+  width: 100%;
+}
+
+.contact__form .message {
+  float: none;
+}
+
+.contact__form select {
+  color: #a47148;
+  cursor: pointer;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.label-select {
+  position: relative;
+}
+
+.label-select::after {
+  content: '';
+  border: 6px solid transparent;
+  border-top-color: #a47148;
+  border-radius: 2px;
+  display: inline-block;
+
+  position: absolute;
+  right: 1rem;
+  bottom: 0px;
+}
+
+.contact__form select::-ms-expand {
+  display: none;
+}
+
+.contact__form textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+/* Message scrollbar*/
+.message textarea::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+.message textarea::-webkit-scrollbar-track {
+  background: #e7e4df;
+}
+
+/* Handle */
+.message textarea::-webkit-scrollbar-thumb {
+  background: #b48762;
+}
+
+/* Handle on hover */
+.message textarea::-webkit-scrollbar-thumb:hover {
+  background: #cc9a70;
+}
+
+.contact__form ::-webkit-input-placeholder {
+  color: #a47148;
+}
+
+.contact__form ::-moz-placeholder {
+  color: #a47148;
+  opacity: 1;
+}
+
+.contact__form :-ms-input-placeholder {
+  color: #a47148;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #a47148;
+  border-radius: 2rem;
+  color: #a47148;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 1rem 1.6rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #a47148;
+  color: #fff;
+}
+
+.contact__success-msg {
+  color: #a47148;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 3rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact__success-msg h3 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.contact__success-msg svg {
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact__form input[type='text'],
+  .contact__form input[type='email'],
+  .contact__form input[type='tel'],
+  .contact__form select,
+  .contact__form textarea {
+    font-size: 1rem;
+  }
+
+  .contact__form .name,
+  .contact__form .email {
+    float: none;
+    width: 100%;
+  }
+
+  .contact__form {
+    padding: 0 2rem 1rem;
+  }
+
+  .contact .submit {
+    text-align: center;
+  }
+
+  .contact__success-msg {
+    margin-top: 0;
+  }
+
+  .contact__success-msg h3 {
+    font-size: 1.1rem;
+  }
+}

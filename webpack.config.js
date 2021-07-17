@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   mode: 'development',
@@ -6,23 +6,26 @@ module.exports = {
   devtool: 'source-map',
   output: {
     filename: './packs/bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'public'),
   },
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js'],
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     compress: true,
-    port: 3000
+    port: 3000,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, use: ['url-loader?limit=100000'] }
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/,
+        use: ['url-loader?limit=100000'],
+      },
     ],
   },
-}
+};
