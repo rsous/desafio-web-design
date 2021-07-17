@@ -44,13 +44,6 @@
   border-radius: 5px;
 }
 
-/*.contact__form input[type='text']:focus,*/
-/*.contact__form input[type='email']:focus,*/
-/*textarea:focus {*/
-/*  outline: none;*/
-/*  padding: 0 0 0.875em 0;*/
-/*}*/
-
 .contact__form .name {
   float: left;
   width: 45%;
